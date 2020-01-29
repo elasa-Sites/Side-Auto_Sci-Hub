@@ -1,9 +1,9 @@
 {
     "manifest_version":2,
-    "name": "Auto Sci-Hub",
-    "version": "1.7.3",
+    "name": "SS Sci-Hub",
+    "version": "1.7.4",
 
-    "description": "Auto-modify the url to load Sci-Hub page with your article eddited form RoiArthurB/Side-Auto_Sci-Hub",
+    "description": "Auto-modify the url to load Sci-Hub page with your article eddited form elasa-Sites/Side-Auto_Sci-Hub",
 
     "permissions": [
         "activeTab"
