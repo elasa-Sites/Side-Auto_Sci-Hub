@@ -1,0 +1,28 @@
+/*
+ *  GLOBAL VAR
+ */
+
+//var baseURL = "https://whereisscihub-rf7h2bfl8.now.sh/go/"; //"https://whereisscihub.now.sh/go/";
+
+var baseURL = "https://scihub.bban.top/"; //"https://scihub.bban.top/";
+
+
+
+// Firefox always has both chrome and browser objects, Chrome has only chrome
+var browser = browser || chrome
+
+function openSciHubTab(tab) {
+    if ( tab.active ){
+        browser.tabs.create({
+            url: baseURL + tab.url,
+            index: tab.index + 1
+        });
+    }
+}
+
+/*
+ *  EVENT LISTENER
+ */
+
+// Listener
+browser.browserAction.onClicked.addListener(function(tab) { openSciHubTab(tab) });
